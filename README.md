@@ -67,9 +67,13 @@ function App() {
 
 Currently available components:
 
-- **Button** - Flexible button component with variants and states
+- **Button** - Flexible button component with warm variants and organic shadows
+- **Badge** - Small status indicators with natural color tones
+- **Card** - Content containers with gentle surface backgrounds
+- **Input** - Form inputs with warm borders and focus states
+- **Alert** - Notification components using earth-tone colors (success: leaf green, warning: persimmon, error: deep persimmon)
 
-More components coming soon!
+All components follow the "No Black, No Gray" philosophy with warm, organic styling.
 
 ## Development
 
