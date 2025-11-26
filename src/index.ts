@@ -22,6 +22,37 @@ export type { InputProps } from './components/input'
 
 export { Alert, AlertTitle, AlertDescription } from './components/alert'
 
+export { Checkbox } from './components/checkbox'
+export type { CheckboxProps } from './components/checkbox'
+
+export { Label } from './components/label'
+export type { LabelProps } from './components/label'
+
+export { Textarea } from './components/textarea'
+export type { TextareaProps } from './components/textarea'
+
+export { Switch } from './components/switch'
+export type { SwitchProps } from './components/switch'
+
+export { Radio, RadioGroup } from './components/radio'
+export type { RadioProps } from './components/radio'
+
+export { Select } from './components/select'
+export type { SelectProps } from './components/select'
+
+export { Tooltip } from './components/tooltip'
+export type { TooltipProps } from './components/tooltip'
+
+export {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogFooter,
+  DialogTitle,
+  DialogDescription,
+} from './components/dialog'
+export type { DialogProps } from './components/dialog'
+
 // Hooks
 export { useControllableState, useDisclosure } from './hooks'
 export type { UseControllableStateProps, UseDisclosureProps } from './hooks'

@@ -67,13 +67,26 @@ function App() {
 
 Currently available components:
 
+### Display & Feedback
 - **Button** - Flexible button component with warm variants and organic shadows
 - **Badge** - Small status indicators with natural color tones
 - **Card** - Content containers with gentle surface backgrounds
-- **Input** - Form inputs with warm borders and focus states
 - **Alert** - Notification components using earth-tone colors (success: leaf green, warning: persimmon, error: deep persimmon)
 
-All components follow the "No Black, No Gray" philosophy with warm, organic styling.
+### Forms
+- **Input** - Text inputs with warm borders and focus states
+- **Textarea** - Multi-line text areas with organic styling
+- **Checkbox** - Checkboxes with persimmon accent color
+- **Radio** - Radio buttons with warm styling
+- **Switch** - Toggle switches with leaf green active state
+- **Select** - Native select dropdowns with organic borders
+- **Label** - Form labels with consistent typography
+
+### Overlays
+- **Dialog** - Modal dialogs with warm shadows and backdrop blur
+- **Tooltip** - Hover tooltips with smooth animations
+
+All components (13 total) follow the "No Black, No Gray" philosophy with warm, organic styling.
 
 ## Development
 
