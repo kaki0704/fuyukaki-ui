@@ -1,10 +1,35 @@
 # @persimmon/ui
 
-A modern, accessible React UI component library built with TypeScript and Tailwind CSS.
+**Natural warmth for your interface.**
+
+A modern, accessible React UI component library built with TypeScript and Tailwind CSS, inspired by the warm, organic tones of nature.
+
+## Philosophy: Warm & Organic
+
+> "Digital interfaces that feel like soil and wood, not cold metal and glass."
+
+@persimmon/ui follows a unique **"No Black, No Gray"** design philosophy. Instead of sterile grays and harsh blacks, we use warm earth tones inspired by nature:
+
+- **柿色 (Persimmon)** `#EB6101` - Our vibrant primary color
+- **葉色 (Leaf Green)** `#6A8347` - Natural green for positive actions
+- **渋色 (Shibu Brown)** `#4E3D35` - Warm brown replaces pure black for text
+- **生成り (Off White)** `#FAF7F2` - Paper-like background instead of stark white
+- **淡柿 (Pale Orange)** `#FCEDE6` - Gentle surface color
+
+This creates interfaces that are easier on the eyes, feel more human, and stand out from the sea of monochrome UIs.
+
+## Who is this for?
+
+Perfect for applications in:
+
+- 🍽️ **Food & Culinary** - Restaurants, cafes, recipe sites
+- 🌿 **Lifestyle & Wellness** - Organic products, yoga, meditation
+- 🏯 **Japanese & Traditional** - Cultural sites, crafts, hospitality
+- 🛍️ **D2C & Artisan Brands** - Handmade goods, natural products
 
 ## Features
 
-- 🎨 **Tailwind CSS** - Utility-first styling with CSS variables for theming
+- 🎨 **Warm Color Palette** - No pure black or gray, only natural earth tones
 - 🔒 **TypeScript** - Full type safety and IntelliSense support
 - ♿ **Accessible** - WAI-ARIA compliant components
 - 🎯 **Headless Architecture** - Flexible, unstyled primitives with pre-styled defaults
