@@ -35,9 +35,7 @@ export const Default: Story = {
           <DialogContent>
             <DialogHeader>
               <DialogTitle>Welcome</DialogTitle>
-              <DialogDescription>
-                This is a warm and organic dialog component.
-              </DialogDescription>
+              <DialogDescription>This is a warm and organic dialog component.</DialogDescription>
             </DialogHeader>
             <div className="py-4">
               <p className="text-sm text-foreground">

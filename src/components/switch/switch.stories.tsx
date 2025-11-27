@@ -53,28 +53,22 @@ export const SettingsExample: Story = {
         <div className="space-y-3">
           <div className="flex items-center justify-between">
             <div className="space-y-0.5">
-              <label className="text-sm font-medium text-foreground">Email notifications</label>
-              <p className="text-sm text-muted-foreground">
-                Receive updates about your orders
-              </p>
+              <div className="text-sm font-medium text-foreground">Email notifications</div>
+              <p className="text-sm text-muted-foreground">Receive updates about your orders</p>
             </div>
             <Switch defaultChecked />
           </div>
           <div className="flex items-center justify-between">
             <div className="space-y-0.5">
-              <label className="text-sm font-medium text-foreground">Organic only</label>
-              <p className="text-sm text-muted-foreground">
-                Show only organic products
-              </p>
+              <div className="text-sm font-medium text-foreground">Organic only</div>
+              <p className="text-sm text-muted-foreground">Show only organic products</p>
             </div>
             <Switch defaultChecked />
           </div>
           <div className="flex items-center justify-between">
             <div className="space-y-0.5">
-              <label className="text-sm font-medium text-foreground">Local sourcing</label>
-              <p className="text-sm text-muted-foreground">
-                Prioritize locally-sourced items
-              </p>
+              <div className="text-sm font-medium text-foreground">Local sourcing</div>
+              <p className="text-sm text-muted-foreground">Prioritize locally-sourced items</p>
             </div>
             <Switch />
           </div>

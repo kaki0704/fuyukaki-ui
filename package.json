@@ -1,5 +1,5 @@
 {
-  "name": "@persimmon/ui",
+  "name": "@hongsi-ui/core",
   "version": "0.1.0",
   "description": "A modern, accessible React UI component library built with TypeScript and Tailwind CSS",
   "type": "module",
@@ -32,12 +32,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kaki0704/persimmon-ui.git"
+    "url": "https://github.com/kaki0704/hongsi-ui.git"
   },
   "bugs": {
-    "url": "https://github.com/kaki0704/persimmon-ui/issues"
+    "url": "https://github.com/kaki0704/hongsi-ui/issues"
   },
-  "homepage": "https://github.com/kaki0704/persimmon-ui#readme",
+  "homepage": "https://github.com/kaki0704/hongsi-ui#readme",
   "peerDependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0"

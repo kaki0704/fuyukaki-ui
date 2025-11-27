@@ -1,5 +1,5 @@
 import { cn } from '@/utils'
-import { cva, type VariantProps } from 'class-variance-authority'
+import { type VariantProps, cva } from 'class-variance-authority'
 import * as React from 'react'
 
 const alertVariants = cva(
@@ -10,14 +10,12 @@ const alertVariants = cva(
         // Default: warm beige tone
         default: 'bg-muted/50 text-foreground border-border',
         // Success: 葉色 (Leaf Green) - natural positive tone
-        success:
-          'bg-secondary/10 text-secondary border-secondary/30 [&>svg]:text-secondary',
+        success: 'bg-secondary/10 text-secondary border-secondary/30 [&>svg]:text-secondary',
         // Destructive: 深柿 (Deep Persimmon) - warm error tone
         destructive:
           'bg-destructive/10 text-destructive border-destructive/30 [&>svg]:text-destructive',
         // Warning: 柿色 (Persimmon) - warm warning tone
-        warning:
-          'bg-primary/10 text-primary border-primary/30 [&>svg]:text-primary',
+        warning: 'bg-primary/10 text-primary border-primary/30 [&>svg]:text-primary',
       },
     },
     defaultVariants: {

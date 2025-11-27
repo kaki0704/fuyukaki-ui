@@ -80,9 +80,7 @@ export const Default: Story = {
     <Alert className="w-[400px]">
       <InfoIcon />
       <AlertTitle>Information</AlertTitle>
-      <AlertDescription>
-        This is a default alert with warm, organic styling.
-      </AlertDescription>
+      <AlertDescription>This is a default alert with warm, organic styling.</AlertDescription>
     </Alert>
   ),
 }

@@ -43,13 +43,7 @@ const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
             data-state={props.checked || props.defaultChecked ? 'checked' : 'unchecked'}
           />
         </button>
-        <input
-          type="checkbox"
-          id={switchId}
-          ref={ref}
-          className="sr-only"
-          {...props}
-        />
+        <input type="checkbox" id={switchId} ref={ref} className="sr-only" {...props} />
         {label && (
           <label
             htmlFor={switchId}

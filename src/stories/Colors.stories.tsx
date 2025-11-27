@@ -11,7 +11,12 @@ const meta = {
 export default meta
 type Story = StoryObj<typeof meta>
 
-const ColorSwatch = ({ color, name, hex, usage }: { color: string; name: string; hex: string; usage: string }) => (
+const ColorSwatch = ({
+  color,
+  name,
+  hex,
+  usage,
+}: { color: string; name: string; hex: string; usage: string }) => (
   <div className="flex flex-col gap-3 rounded-lg border border-border p-4 shadow-sm">
     <div className={`h-24 w-full rounded-md ${color}`} />
     <div>
@@ -27,14 +32,12 @@ export const WarmAndOrganic: Story = {
     <div className="space-y-8">
       <div>
         <h1 className="text-3xl font-bold text-foreground mb-2">Warm & Organic Color Palette</h1>
-        <p className="text-lg text-muted-foreground mb-4">
-          "Natural warmth for your interface."
-        </p>
+        <p className="text-lg text-muted-foreground mb-4">"Natural warmth for your interface."</p>
         <p className="text-foreground max-w-3xl">
           @persimmon/ui follows a unique <strong>"No Black, No Gray"</strong> design philosophy.
           Instead of sterile grays and harsh blacks, we use warm earth tones inspired by nature.
-          These colors create interfaces that are easier on the eyes, feel more human, and stand
-          out from the sea of monochrome UIs.
+          These colors create interfaces that are easier on the eyes, feel more human, and stand out
+          from the sea of monochrome UIs.
         </p>
       </div>
 
@@ -103,19 +106,31 @@ export const WarmAndOrganic: Story = {
         <ul className="space-y-2 text-foreground">
           <li className="flex items-start gap-2">
             <span className="text-primary font-bold">•</span>
-            <span><strong>No pure black (#000000):</strong> We use 渋色 (Shibu Brown) for text, creating a softer, warmer appearance.</span>
+            <span>
+              <strong>No pure black (#000000):</strong> We use 渋色 (Shibu Brown) for text, creating
+              a softer, warmer appearance.
+            </span>
           </li>
           <li className="flex items-start gap-2">
             <span className="text-primary font-bold">•</span>
-            <span><strong>No pure white (#FFFFFF):</strong> Backgrounds use 生成り (Off White) for a paper-like quality.</span>
+            <span>
+              <strong>No pure white (#FFFFFF):</strong> Backgrounds use 生成り (Off White) for a
+              paper-like quality.
+            </span>
           </li>
           <li className="flex items-start gap-2">
             <span className="text-primary font-bold">•</span>
-            <span><strong>No gray (#808080):</strong> All neutral tones have warm undertones from browns and beiges.</span>
+            <span>
+              <strong>No gray (#808080):</strong> All neutral tones have warm undertones from browns
+              and beiges.
+            </span>
           </li>
           <li className="flex items-start gap-2">
             <span className="text-primary font-bold">•</span>
-            <span><strong>Shadows use brown:</strong> box-shadow: 0 4px 6px rgba(78, 61, 53, 0.2) instead of black shadows.</span>
+            <span>
+              <strong>Shadows use brown:</strong> box-shadow: 0 4px 6px rgba(78, 61, 53, 0.2)
+              instead of black shadows.
+            </span>
           </li>
         </ul>
       </div>

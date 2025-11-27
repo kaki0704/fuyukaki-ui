@@ -1,4 +1,4 @@
-# @persimmon/ui
+# @hongsi-ui/core
 
 **Natural warmth for your interface.**
 
@@ -8,7 +8,7 @@ A modern, accessible React UI component library built with TypeScript and Tailwi
 
 > "Digital interfaces that feel like soil and wood, not cold metal and glass."
 
-@persimmon/ui follows a unique **"No Black, No Gray"** design philosophy. Instead of sterile grays and harsh blacks, we use warm earth tones inspired by nature:
+@hongsi-ui/core follows a unique **"No Black, No Gray"** design philosophy. Instead of sterile grays and harsh blacks, we use warm earth tones inspired by nature:
 
 - **柿色 (Persimmon)** `#EB6101` - Our vibrant primary color
 - **葉色 (Leaf Green)** `#6A8347` - Natural green for positive actions
@@ -40,17 +40,17 @@ Perfect for applications in:
 ## Installation
 
 ```bash
-pnpm add @persimmon/ui
+pnpm add @hongsi-ui/core
 # or
-npm install @persimmon/ui
+npm install @hongsi-ui/core
 # or
-yarn add @persimmon/ui
+yarn add @hongsi-ui/core
 ```
 
 ## Usage
 
 ```tsx
-import { Button } from '@persimmon/ui'
+import { Button } from '@hongsi-ui/core'
 
 function App() {
   return (
@@ -138,4 +138,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Repository
 
-[https://github.com/kaki0704/persimmon-ui](https://github.com/kaki0704/persimmon-ui)
+[https://github.com/kaki0704/hongsi-ui](https://github.com/kaki0704/hongsi-ui)
