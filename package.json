@@ -32,12 +32,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kaki0704/hongsi-ui.git"
+    "url": "https://github.com/kaki0704/fuyukaki-ui.git"
   },
   "bugs": {
-    "url": "https://github.com/kaki0704/hongsi-ui/issues"
+    "url": "https://github.com/kaki0704/fuyukaki-ui/issues"
   },
-  "homepage": "https://github.com/kaki0704/hongsi-ui#readme",
+  "homepage": "https://github.com/kaki0704/fuyukaki-ui#readme",
   "peerDependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0"

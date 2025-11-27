@@ -1,4 +1,4 @@
-# @hongsi-ui/core
+# fuyukaki-ui
 
 **Natural warmth for your interface.**
 
@@ -8,7 +8,7 @@ A modern, accessible React UI component library built with TypeScript and Tailwi
 
 > "Digital interfaces that feel like soil and wood, not cold metal and glass."
 
-@hongsi-ui/core follows a unique **"No Black, No Gray"** design philosophy. Instead of sterile grays and harsh blacks, we use warm earth tones inspired by nature:
+fuyukaki-ui follows a unique **"No Black, No Gray"** design philosophy. Instead of sterile grays and harsh blacks, we use warm earth tones inspired by nature:
 
 - **柿色 (Persimmon)** `#EB6101` - Our vibrant primary color
 - **葉色 (Leaf Green)** `#6A8347` - Natural green for positive actions
@@ -40,17 +40,17 @@ Perfect for applications in:
 ## Installation
 
 ```bash
-pnpm add @hongsi-ui/core
+pnpm add fuyukaki-ui
 # or
-npm install @hongsi-ui/core
+npm install fuyukaki-ui
 # or
-yarn add @hongsi-ui/core
+yarn add fuyukaki-ui
 ```
 
 ## Usage
 
 ```tsx
-import { Button } from '@hongsi-ui/core'
+import { Button } from 'fuyukaki-ui'
 
 function App() {
   return (
@@ -138,4 +138,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Repository
 
-[https://github.com/kaki0704/hongsi-ui](https://github.com/kaki0704/hongsi-ui)
+[https://github.com/kaki0704/fuyukaki-ui](https://github.com/kaki0704/fuyukaki-ui)
