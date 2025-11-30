@@ -53,9 +53,133 @@ export {
 } from './components/dialog'
 export type { DialogProps } from './components/dialog'
 
+export { Progress } from './components/progress'
+export type { ProgressProps } from './components/progress'
+
+export { Spinner } from './components/spinner'
+export type { SpinnerProps } from './components/spinner'
+
+// New Components
+export {
+  Avatar,
+  AvatarImage,
+  AvatarFallback,
+  AvatarStatus,
+  AvatarWithInitials,
+  avatarVariants,
+  avatarImageVariants,
+  avatarFallbackVariants,
+  avatarStatusVariants,
+  avatarAnatomy,
+} from './components/avatar'
+export type {
+  AvatarProps,
+  AvatarImageProps,
+  AvatarFallbackProps,
+  AvatarStatusProps,
+} from './components/avatar'
+
+export {
+  Confetti,
+  useConfetti,
+} from './components/confetti'
+export type { ConfettiProps, ConfettiOptions, ConfettiPreset } from './components/confetti'
+
+export {
+  Toast,
+  ToastViewport,
+  ToastTitle,
+  ToastDescription,
+  ToastAction,
+  ToastClose,
+  ToastProvider,
+  toastVariants,
+  toastViewportVariants,
+  toastTitleVariants,
+  toastDescriptionVariants,
+  toastActionVariants,
+  toastCloseVariants,
+  toastAnatomy,
+} from './components/toast'
+export type {
+  ToastProps,
+  ToastViewportProps,
+  ToastTitleProps,
+  ToastDescriptionProps,
+  ToastActionProps,
+  ToastCloseProps,
+} from './components/toast'
+
+export {
+  DropdownMenu,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  dropdownMenuContentVariants,
+  dropdownMenuItemVariants,
+  dropdownMenuLabelVariants,
+  dropdownMenuSeparatorVariants,
+  dropdownMenuShortcutVariants,
+  dropdownMenuAnatomy,
+} from './components/dropdown-menu'
+export type {
+  DropdownMenuProps,
+  DropdownMenuTriggerProps,
+  DropdownMenuContentProps,
+  DropdownMenuItemProps,
+  DropdownMenuLabelProps,
+  DropdownMenuSeparatorProps,
+} from './components/dropdown-menu'
+
+export {
+  Table,
+  TableHeader,
+  TableBody,
+  TableFooter,
+  TableRow,
+  TableHead,
+  TableCell,
+  TableCaption,
+  tableVariants,
+  tableHeaderVariants,
+  tableBodyVariants,
+  tableFooterVariants,
+  tableRowVariants,
+  tableHeadVariants,
+  tableCellVariants,
+  tableCaptionVariants,
+  tableAnatomy,
+} from './components/table'
+export type {
+  TableProps,
+  TableHeaderProps,
+  TableBodyProps,
+  TableFooterProps,
+  TableRowProps,
+  TableHeadProps,
+  TableCellProps,
+  TableCaptionProps,
+} from './components/table'
+
 // Hooks
-export { useControllableState, useDisclosure } from './hooks'
-export type { UseControllableStateProps, UseDisclosureProps } from './hooks'
+export {
+  useControllableState,
+  useDisclosure,
+  useFocusTrap,
+  useOutsideClick,
+  useToast,
+} from './hooks'
+export type {
+  UseControllableStateProps,
+  UseDisclosureProps,
+  ToastOptions,
+  Toast as ToastType,
+  ToastVariant,
+  ToastPosition,
+} from './hooks'
 
 // Utils
-export { cn, createContext } from './utils'
+export { cn, createContext, getInitials, Portal } from './utils'
+export type { PortalProps } from './utils'

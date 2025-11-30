@@ -1,2 +1,5 @@
 export { cn } from './cn'
 export { createContext } from './create-context'
+export { getInitials } from './get-initials'
+export { Portal } from './portal'
+export type { PortalProps } from './portal'
