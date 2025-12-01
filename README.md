@@ -47,7 +47,42 @@ npm install fuyukaki-ui
 yarn add fuyukaki-ui
 ```
 
-## Usage
+## Setup
+
+Choose one of the following methods to set up styles:
+
+### Option A: CSS Import (Recommended for non-Tailwind users)
+
+```tsx
+// Import styles once in your app entry point
+import 'fuyukaki-ui/styles.css'
+import { Button } from 'fuyukaki-ui'
+
+function App() {
+  return (
+    <Button variant="primary" size="md">
+      Click me
+    </Button>
+  )
+}
+```
+
+### Option B: Tailwind Plugin (Recommended for Tailwind users)
+
+```ts
+// tailwind.config.ts
+import { fuyukaki } from 'fuyukaki-ui/plugin'
+
+export default {
+  content: [
+    './src/**/*.{js,ts,jsx,tsx}',
+    './node_modules/fuyukaki-ui/dist/**/*.{js,cjs}',
+  ],
+  plugins: [fuyukaki()],
+}
+```
+
+Then use components without importing CSS:
 
 ```tsx
 import { Button } from 'fuyukaki-ui'
@@ -61,32 +96,44 @@ function App() {
 }
 ```
 
-> **Note**: Styles are automatically imported when you import components. No need to manually import CSS files!
+The Tailwind plugin provides:
+- CSS variables for theming (light/dark mode)
+- Color palette integration with Tailwind
+- Tree-shaking for unused styles
 
 ## Components
 
-Currently available components:
+Currently available components (20 total):
 
 ### Display & Feedback
-- **Button** - Flexible button component with warm variants and organic shadows
+- **Button** - Flexible button with warm variants and organic shadows
 - **Badge** - Small status indicators with natural color tones
 - **Card** - Content containers with gentle surface backgrounds
-- **Alert** - Notification components using earth-tone colors (success: leaf green, warning: persimmon, error: deep persimmon)
+- **Alert** - Notification components using earth-tone colors
+- **Avatar** - User avatars with image, initials, and status indicators
+- **Progress** - Progress bars with warm color variants
+- **Spinner** - Loading spinners with customizable sizes
+- **Toast** - Toast notifications with provider pattern
+- **Confetti** - Celebration effects for success moments
 
 ### Forms
 - **Input** - Text inputs with warm borders and focus states
 - **Textarea** - Multi-line text areas with organic styling
 - **Checkbox** - Checkboxes with persimmon accent color
-- **Radio** - Radio buttons with warm styling
+- **Radio / RadioGroup** - Radio buttons with warm styling
 - **Switch** - Toggle switches with leaf green active state
 - **Select** - Native select dropdowns with organic borders
 - **Label** - Form labels with consistent typography
 
-### Overlays
+### Overlays & Navigation
 - **Dialog** - Modal dialogs with warm shadows and backdrop blur
 - **Tooltip** - Hover tooltips with smooth animations
+- **Dropdown Menu** - Accessible dropdown menus with keyboard navigation
 
-All components (13 total) follow the "No Black, No Gray" philosophy with warm, organic styling.
+### Data Display
+- **Table** - Data tables with sortable columns and warm styling
+
+All components follow the "No Black, No Gray" philosophy with warm, organic styling.
 
 ## Development
 
@@ -120,9 +167,9 @@ pnpm build
 
 ## Tech Stack
 
-- **React 18** - UI library
+- **React 19** - UI library
 - **TypeScript** - Type safety
-- **Tailwind CSS** - Styling
+- **Tailwind CSS v4** - Styling
 - **Vite** - Build tool
 - **Vitest** - Testing framework
 - **Storybook** - Documentation and development

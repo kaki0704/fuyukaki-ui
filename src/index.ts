@@ -1,6 +1,3 @@
-// Auto-import styles
-import './styles.css'
-
 // Components
 export { Button, buttonVariants, buttonAnatomy } from './components/button'
 export type { ButtonProps } from './components/button'

@@ -1,13 +1,11 @@
 import { resolve } from 'node:path'
 import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
-import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js'
 import dts from 'vite-plugin-dts'
 
 export default defineConfig({
   plugins: [
     react(),
-    cssInjectedByJsPlugin(),
     dts({
       include: ['src'],
       exclude: ['**/*.test.tsx', '**/*.test.ts', '**/*.stories.tsx'],
@@ -20,18 +18,28 @@ export default defineConfig({
   },
   build: {
     lib: {
-      entry: resolve(__dirname, 'src/index.ts'),
-      name: 'PersimmonUI',
+      entry: {
+        index: resolve(__dirname, 'src/index.ts'),
+        plugin: resolve(__dirname, 'src/plugin.ts'),
+      },
       formats: ['es', 'cjs'],
-      fileName: (format) => (format === 'es' ? 'index.js' : 'index.cjs'),
+      fileName: (format, entryName) =>
+        format === 'es' ? `${entryName}.js` : `${entryName}.cjs`,
     },
+    cssCodeSplit: false,
     rollupOptions: {
-      external: ['react', 'react-dom', 'react/jsx-runtime'],
+      external: ['react', 'react-dom', 'react/jsx-runtime', 'tailwindcss', 'tailwindcss/plugin'],
       output: {
         globals: {
           react: 'React',
           'react-dom': 'ReactDOM',
           'react/jsx-runtime': 'react/jsx-runtime',
+        },
+        assetFileNames: (assetInfo) => {
+          if (assetInfo.name === 'style.css') {
+            return 'styles.css'
+          }
+          return assetInfo.name || 'assets/[name]-[hash][extname]'
         },
       },
     },
