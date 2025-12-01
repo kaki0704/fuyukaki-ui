@@ -163,6 +163,34 @@ export type {
   TableCaptionProps,
 } from './components/table'
 
+export { Tabs, TabsList, TabsTrigger, TabsContent } from './components/tabs'
+export type { TabsProps, TabsListProps, TabsTriggerProps, TabsContentProps } from './components/tabs'
+
+export { Slider } from './components/slider'
+export type { SliderProps } from './components/slider'
+
+export {
+  NavMenu,
+  NavMenuList,
+  NavMenuItem,
+  NavMenuTrigger,
+  NavMenuContent,
+  NavMenuLink,
+  NavMenuSub,
+  NavMenuSeparator,
+  NavMenuViewport,
+} from './components/nav-menu'
+export type {
+  NavMenuProps,
+  NavMenuListProps,
+  NavMenuItemProps,
+  NavMenuTriggerProps,
+  NavMenuContentProps,
+  NavMenuLinkProps,
+  NavMenuSubProps,
+  NavMenuSeparatorProps,
+} from './components/nav-menu'
+
 // Hooks
 export {
   useControllableState,
