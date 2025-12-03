@@ -12,19 +12,20 @@
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
     },
-    "./styles.css": "./dist/styles.css",
     "./plugin": {
       "types": "./dist/plugin.d.ts",
       "import": "./dist/plugin.js",
       "require": "./dist/plugin.cjs"
-    }
+    },
+    "./theme.css": "./src/theme.css"
   },
   "files": [
-    "dist"
+    "dist",
+    "src/theme.css"
   ],
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build && npx @tailwindcss/cli -i src/styles.css -o dist/styles.css --minify",
+    "build": "tsc && vite build",
     "test": "vitest",
     "test:ui": "vitest --ui",
     "lint": "biome check .",

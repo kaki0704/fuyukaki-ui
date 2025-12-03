@@ -47,42 +47,34 @@ npm install fuyukaki-ui
 yarn add fuyukaki-ui
 ```
 
-## Setup
+## Setup (Tailwind CSS v4)
 
-Choose one of the following methods to set up styles:
+Install Tailwind CSS v4:
 
-### Option A: CSS Import (Recommended for non-Tailwind users)
-
-```tsx
-// Import styles once in your app entry point
-import 'fuyukaki-ui/styles.css'
-import { Button } from 'fuyukaki-ui'
-
-function App() {
-  return (
-    <Button variant="primary" size="md">
-      Click me
-    </Button>
-  )
-}
+```bash
+pnpm add tailwindcss @tailwindcss/vite
 ```
 
-### Option B: Tailwind Plugin (Recommended for Tailwind users)
+Add the Tailwind plugin to your Vite config:
 
 ```ts
-// tailwind.config.ts
-import { fuyukaki } from 'fuyukaki-ui/plugin'
+// vite.config.ts
+import tailwindcss from '@tailwindcss/vite'
 
 export default {
-  content: [
-    './src/**/*.{js,ts,jsx,tsx}',
-    './node_modules/fuyukaki-ui/dist/**/*.{js,cjs}',
-  ],
-  plugins: [fuyukaki()],
+  plugins: [tailwindcss()],
 }
 ```
 
-Then use components without importing CSS:
+Import the theme CSS in your main stylesheet:
+
+```css
+/* src/styles.css */
+@import "tailwindcss";
+@import "fuyukaki-ui/theme.css";
+```
+
+Then use components:
 
 ```tsx
 import { Button } from 'fuyukaki-ui'
@@ -96,10 +88,10 @@ function App() {
 }
 ```
 
-The Tailwind plugin provides:
+The theme.css provides:
 - CSS variables for theming (light/dark mode)
-- Color palette integration with Tailwind
-- Tree-shaking for unused styles
+- Color palette integration with Tailwind CSS v4
+- Automatic scanning of component classes via `@source`
 
 ## Components
 
