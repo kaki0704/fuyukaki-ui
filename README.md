@@ -95,7 +95,7 @@ The theme.css provides:
 
 ## Components
 
-Currently available components (20 total):
+Currently available components (21 total):
 
 ### Display & Feedback
 - **Button** - Flexible button with warm variants and organic shadows
@@ -107,6 +107,7 @@ Currently available components (20 total):
 - **Spinner** - Loading spinners with customizable sizes
 - **Toast** - Toast notifications with provider pattern
 - **Confetti** - Celebration effects for success moments
+- **HidamariText** - Animated gradient text with warm, organic color transitions
 
 ### Forms
 - **Input** - Text inputs with warm borders and focus states

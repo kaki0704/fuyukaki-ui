@@ -56,6 +56,9 @@ export type { ProgressProps } from './components/progress'
 export { Spinner } from './components/spinner'
 export type { SpinnerProps } from './components/spinner'
 
+export { HidamariText } from './components/hidamari-text'
+export type { HidamariTextProps } from './components/hidamari-text'
+
 // New Components
 export {
   Avatar,
