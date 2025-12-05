@@ -191,6 +191,25 @@ export type {
   NavMenuSeparatorProps,
 } from './components/nav-menu'
 
+export {
+  Breadcrumb,
+  BreadcrumbList,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+  BreadcrumbEllipsis,
+} from './components/breadcrumb'
+export type {
+  BreadcrumbProps,
+  BreadcrumbListProps,
+  BreadcrumbItemProps,
+  BreadcrumbLinkProps,
+  BreadcrumbPageProps,
+  BreadcrumbSeparatorProps,
+  BreadcrumbEllipsisProps,
+} from './components/breadcrumb'
+
 // Hooks
 export {
   useControllableState,
