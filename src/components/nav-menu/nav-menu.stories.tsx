@@ -30,22 +30,22 @@ export const Default: Story = {
         <NavMenuItem value="getting-started">
           <NavMenuTrigger>Getting Started</NavMenuTrigger>
           <NavMenuContent>
-            <NavMenuLink href="#">Introduction</NavMenuLink>
-            <NavMenuLink href="#">Installation</NavMenuLink>
-            <NavMenuLink href="#">Quick Start</NavMenuLink>
+            <NavMenuLink href="/docs/introduction">Introduction</NavMenuLink>
+            <NavMenuLink href="/docs/installation">Installation</NavMenuLink>
+            <NavMenuLink href="/docs/quick-start">Quick Start</NavMenuLink>
           </NavMenuContent>
         </NavMenuItem>
         <NavMenuItem value="components">
           <NavMenuTrigger>Components</NavMenuTrigger>
           <NavMenuContent>
-            <NavMenuLink href="#">Button</NavMenuLink>
-            <NavMenuLink href="#">Input</NavMenuLink>
-            <NavMenuLink href="#">Select</NavMenuLink>
-            <NavMenuLink href="#">Modal</NavMenuLink>
+            <NavMenuLink href="/components/button">Button</NavMenuLink>
+            <NavMenuLink href="/components/input">Input</NavMenuLink>
+            <NavMenuLink href="/components/select">Select</NavMenuLink>
+            <NavMenuLink href="/components/modal">Modal</NavMenuLink>
           </NavMenuContent>
         </NavMenuItem>
         <NavMenuItem>
-          <NavMenuLink href="#">Documentation</NavMenuLink>
+          <NavMenuLink href="/docs">Documentation</NavMenuLink>
         </NavMenuItem>
       </NavMenuList>
       <NavMenuViewport />
@@ -62,14 +62,14 @@ export const WithSubgroups: Story = {
           <NavMenuContent className="w-[400px]">
             <div className="grid grid-cols-2 gap-2">
               <NavMenuSub title="Development">
-                <NavMenuLink href="#">IDE</NavMenuLink>
-                <NavMenuLink href="#">Version Control</NavMenuLink>
-                <NavMenuLink href="#">CI/CD</NavMenuLink>
+                <NavMenuLink href="/products/ide">IDE</NavMenuLink>
+                <NavMenuLink href="/products/version-control">Version Control</NavMenuLink>
+                <NavMenuLink href="/products/ci-cd">CI/CD</NavMenuLink>
               </NavMenuSub>
               <NavMenuSub title="Design">
-                <NavMenuLink href="#">UI Kit</NavMenuLink>
-                <NavMenuLink href="#">Prototyping</NavMenuLink>
-                <NavMenuLink href="#">Assets</NavMenuLink>
+                <NavMenuLink href="/products/ui-kit">UI Kit</NavMenuLink>
+                <NavMenuLink href="/products/prototyping">Prototyping</NavMenuLink>
+                <NavMenuLink href="/products/assets">Assets</NavMenuLink>
               </NavMenuSub>
             </div>
           </NavMenuContent>
@@ -77,18 +77,18 @@ export const WithSubgroups: Story = {
         <NavMenuItem value="solutions">
           <NavMenuTrigger>Solutions</NavMenuTrigger>
           <NavMenuContent>
-            <NavMenuLink href="#">Enterprise</NavMenuLink>
-            <NavMenuLink href="#">Startups</NavMenuLink>
+            <NavMenuLink href="/solutions/enterprise">Enterprise</NavMenuLink>
+            <NavMenuLink href="/solutions/startups">Startups</NavMenuLink>
             <NavMenuSeparator />
-            <NavMenuLink href="#">Education</NavMenuLink>
+            <NavMenuLink href="/solutions/education">Education</NavMenuLink>
           </NavMenuContent>
         </NavMenuItem>
         <NavMenuItem value="resources">
           <NavMenuTrigger>Resources</NavMenuTrigger>
           <NavMenuContent>
-            <NavMenuLink href="#">Blog</NavMenuLink>
-            <NavMenuLink href="#">Tutorials</NavMenuLink>
-            <NavMenuLink href="#">API Reference</NavMenuLink>
+            <NavMenuLink href="/blog">Blog</NavMenuLink>
+            <NavMenuLink href="/tutorials">Tutorials</NavMenuLink>
+            <NavMenuLink href="/api">API Reference</NavMenuLink>
           </NavMenuContent>
         </NavMenuItem>
       </NavMenuList>
@@ -104,21 +104,21 @@ export const Vertical: Story = {
         <NavMenuItem value="dashboard">
           <NavMenuTrigger>Dashboard</NavMenuTrigger>
           <NavMenuContent>
-            <NavMenuLink href="#">Overview</NavMenuLink>
-            <NavMenuLink href="#">Analytics</NavMenuLink>
-            <NavMenuLink href="#">Reports</NavMenuLink>
+            <NavMenuLink href="/dashboard/overview">Overview</NavMenuLink>
+            <NavMenuLink href="/dashboard/analytics">Analytics</NavMenuLink>
+            <NavMenuLink href="/dashboard/reports">Reports</NavMenuLink>
           </NavMenuContent>
         </NavMenuItem>
         <NavMenuItem value="settings">
           <NavMenuTrigger>Settings</NavMenuTrigger>
           <NavMenuContent>
-            <NavMenuLink href="#">General</NavMenuLink>
-            <NavMenuLink href="#">Security</NavMenuLink>
-            <NavMenuLink href="#">Billing</NavMenuLink>
+            <NavMenuLink href="/settings/general">General</NavMenuLink>
+            <NavMenuLink href="/settings/security">Security</NavMenuLink>
+            <NavMenuLink href="/settings/billing">Billing</NavMenuLink>
           </NavMenuContent>
         </NavMenuItem>
         <NavMenuItem>
-          <NavMenuLink href="#">Help</NavMenuLink>
+          <NavMenuLink href="/help">Help</NavMenuLink>
         </NavMenuItem>
       </NavMenuList>
     </NavMenu>
@@ -132,18 +132,20 @@ export const WithActiveLink: Story = {
         <NavMenuItem value="docs">
           <NavMenuTrigger>Documentation</NavMenuTrigger>
           <NavMenuContent>
-            <NavMenuLink href="#" active>Getting Started</NavMenuLink>
-            <NavMenuLink href="#">Components</NavMenuLink>
-            <NavMenuLink href="#">Theming</NavMenuLink>
-            <NavMenuLink href="#">Examples</NavMenuLink>
+            <NavMenuLink href="/docs/getting-started" active>
+              Getting Started
+            </NavMenuLink>
+            <NavMenuLink href="/docs/components">Components</NavMenuLink>
+            <NavMenuLink href="/docs/theming">Theming</NavMenuLink>
+            <NavMenuLink href="/docs/examples">Examples</NavMenuLink>
           </NavMenuContent>
         </NavMenuItem>
         <NavMenuItem value="api">
           <NavMenuTrigger>API</NavMenuTrigger>
           <NavMenuContent>
-            <NavMenuLink href="#">REST API</NavMenuLink>
-            <NavMenuLink href="#">GraphQL</NavMenuLink>
-            <NavMenuLink href="#">Webhooks</NavMenuLink>
+            <NavMenuLink href="/api/rest">REST API</NavMenuLink>
+            <NavMenuLink href="/api/graphql">GraphQL</NavMenuLink>
+            <NavMenuLink href="/api/webhooks">Webhooks</NavMenuLink>
           </NavMenuContent>
         </NavMenuItem>
       </NavMenuList>
@@ -157,16 +159,18 @@ export const SimpleLinks: Story = {
     <NavMenu>
       <NavMenuList>
         <NavMenuItem>
-          <NavMenuLink href="#" active>Home</NavMenuLink>
+          <NavMenuLink href="/" active>
+            Home
+          </NavMenuLink>
         </NavMenuItem>
         <NavMenuItem>
-          <NavMenuLink href="#">About</NavMenuLink>
+          <NavMenuLink href="/about">About</NavMenuLink>
         </NavMenuItem>
         <NavMenuItem>
-          <NavMenuLink href="#">Services</NavMenuLink>
+          <NavMenuLink href="/services">Services</NavMenuLink>
         </NavMenuItem>
         <NavMenuItem>
-          <NavMenuLink href="#">Contact</NavMenuLink>
+          <NavMenuLink href="/contact">Contact</NavMenuLink>
         </NavMenuItem>
       </NavMenuList>
     </NavMenu>
@@ -184,28 +188,76 @@ export const MegaMenu: Story = {
               <div className="space-y-3">
                 <h4 className="font-semibold text-sm">Platform</h4>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li><a href="#" className="hover:text-foreground">Cloud Hosting</a></li>
-                  <li><a href="#" className="hover:text-foreground">Database</a></li>
-                  <li><a href="#" className="hover:text-foreground">Authentication</a></li>
-                  <li><a href="#" className="hover:text-foreground">Storage</a></li>
+                  <li>
+                    <a href="/platform/cloud-hosting" className="hover:text-foreground">
+                      Cloud Hosting
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/platform/database" className="hover:text-foreground">
+                      Database
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/platform/authentication" className="hover:text-foreground">
+                      Authentication
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/platform/storage" className="hover:text-foreground">
+                      Storage
+                    </a>
+                  </li>
                 </ul>
               </div>
               <div className="space-y-3">
                 <h4 className="font-semibold text-sm">Tools</h4>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li><a href="#" className="hover:text-foreground">CLI</a></li>
-                  <li><a href="#" className="hover:text-foreground">Dashboard</a></li>
-                  <li><a href="#" className="hover:text-foreground">Analytics</a></li>
-                  <li><a href="#" className="hover:text-foreground">Monitoring</a></li>
+                  <li>
+                    <a href="/tools/cli" className="hover:text-foreground">
+                      CLI
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/tools/dashboard" className="hover:text-foreground">
+                      Dashboard
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/tools/analytics" className="hover:text-foreground">
+                      Analytics
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/tools/monitoring" className="hover:text-foreground">
+                      Monitoring
+                    </a>
+                  </li>
                 </ul>
               </div>
               <div className="space-y-3">
                 <h4 className="font-semibold text-sm">Integrations</h4>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li><a href="#" className="hover:text-foreground">GitHub</a></li>
-                  <li><a href="#" className="hover:text-foreground">GitLab</a></li>
-                  <li><a href="#" className="hover:text-foreground">Bitbucket</a></li>
-                  <li><a href="#" className="hover:text-foreground">Slack</a></li>
+                  <li>
+                    <a href="/integrations/github" className="hover:text-foreground">
+                      GitHub
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/integrations/gitlab" className="hover:text-foreground">
+                      GitLab
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/integrations/bitbucket" className="hover:text-foreground">
+                      Bitbucket
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/integrations/slack" className="hover:text-foreground">
+                      Slack
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -214,13 +266,13 @@ export const MegaMenu: Story = {
         <NavMenuItem value="pricing">
           <NavMenuTrigger>Pricing</NavMenuTrigger>
           <NavMenuContent>
-            <NavMenuLink href="#">Free</NavMenuLink>
-            <NavMenuLink href="#">Pro</NavMenuLink>
-            <NavMenuLink href="#">Enterprise</NavMenuLink>
+            <NavMenuLink href="/pricing/free">Free</NavMenuLink>
+            <NavMenuLink href="/pricing/pro">Pro</NavMenuLink>
+            <NavMenuLink href="/pricing/enterprise">Enterprise</NavMenuLink>
           </NavMenuContent>
         </NavMenuItem>
         <NavMenuItem>
-          <NavMenuLink href="#">Blog</NavMenuLink>
+          <NavMenuLink href="/blog">Blog</NavMenuLink>
         </NavMenuItem>
       </NavMenuList>
       <NavMenuViewport />

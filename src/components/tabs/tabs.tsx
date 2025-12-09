@@ -23,7 +23,10 @@ function useTabsContext() {
 }
 
 const Tabs = React.forwardRef<HTMLDivElement, TabsProps>(
-  ({ className, defaultValue = '', value: controlledValue, onValueChange, children, ...props }, ref) => {
+  (
+    { className, defaultValue = '', value: controlledValue, onValueChange, children, ...props },
+    ref
+  ) => {
     const [uncontrolledValue, setUncontrolledValue] = React.useState(defaultValue)
 
     const value = controlledValue !== undefined ? controlledValue : uncontrolledValue
@@ -79,11 +82,7 @@ const TabsList = React.forwardRef<HTMLDivElement, TabsListProps>(
         data-part="list"
         data-variant={variant}
         role="tablist"
-        className={cn(
-          'inline-flex items-center justify-start',
-          variantClasses[variant],
-          className
-        )}
+        className={cn('inline-flex items-center justify-start', variantClasses[variant], className)}
         {...props}
       />
     )
@@ -173,7 +172,6 @@ const TabsContent = React.forwardRef<HTMLDivElement, TabsContentProps>(
         role="tabpanel"
         id={`tabpanel-${value}`}
         aria-labelledby={`tab-${value}`}
-        tabIndex={0}
         hidden={!isSelected}
         className={cn(
           'mt-2 ring-offset-background',

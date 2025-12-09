@@ -89,11 +89,7 @@ export const Vertical: Story = {
     const [value, setValue] = React.useState(60)
     return (
       <div className="h-[200px] flex items-center gap-4">
-        <Slider
-          value={value}
-          onChange={setValue}
-          orientation="vertical"
-        />
+        <Slider value={value} onChange={setValue} orientation="vertical" />
         <p className="text-sm text-muted-foreground">Value: {value}</p>
       </div>
     )
@@ -105,14 +101,7 @@ export const DecimalStep: Story = {
     const [value, setValue] = React.useState(0.5)
     return (
       <div className="w-[300px]">
-        <Slider
-          value={value}
-          onChange={setValue}
-          min={0}
-          max={1}
-          step={0.1}
-          showValue
-        />
+        <Slider value={value} onChange={setValue} min={0} max={1} step={0.1} showValue />
         <p className="mt-4 text-sm text-muted-foreground">Range: 0-1, Step: 0.1</p>
       </div>
     )
@@ -136,7 +125,10 @@ export const VolumeControl: Story = {
             strokeLinecap="round"
             strokeLinejoin="round"
             className="text-muted-foreground"
+            role="img"
+            aria-label="Volume"
           >
+            <title>Volume</title>
             {volume === 0 ? (
               <>
                 <polygon points="11,5 6,9 2,9 2,15 6,15 11,19 11,5" />
@@ -156,11 +148,7 @@ export const VolumeControl: Story = {
               </>
             )}
           </svg>
-          <Slider
-            value={volume}
-            onChange={setVolume}
-            className="flex-1"
-          />
+          <Slider value={volume} onChange={setVolume} className="flex-1" aria-label="Volume" />
           <span className="text-sm text-muted-foreground w-8 text-right">{volume}</span>
         </div>
       </div>
@@ -173,7 +161,9 @@ export const PriceRange: Story = {
     const [price, setPrice] = React.useState(500)
     return (
       <div className="w-[300px]">
-        <label className="text-sm font-medium">Max Price</label>
+        <span id="price-label" className="text-sm font-medium">
+          Max Price
+        </span>
         <Slider
           value={price}
           onChange={setPrice}
@@ -181,6 +171,7 @@ export const PriceRange: Story = {
           max={1000}
           step={50}
           className="mt-2"
+          aria-labelledby="price-label"
         />
         <div className="flex justify-between mt-2 text-sm text-muted-foreground">
           <span>$0</span>

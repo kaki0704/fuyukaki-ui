@@ -105,7 +105,11 @@ export const WithInitialsHelper: Story = {
     <div className="flex items-center gap-4">
       <AvatarWithInitials name="John Doe" src="https://i.pravatar.cc/150?img=13" />
       <AvatarWithInitials name="Jane Smith" src="" />
-      <AvatarWithInitials name="Bob Johnson" src="https://i.pravatar.cc/150?img=14" status="online" />
+      <AvatarWithInitials
+        name="Bob Johnson"
+        src="https://i.pravatar.cc/150?img=14"
+        status="online"
+      />
     </div>
   ),
 }

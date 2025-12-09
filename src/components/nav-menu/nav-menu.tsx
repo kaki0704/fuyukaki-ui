@@ -274,12 +274,18 @@ export interface NavMenuLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorE
 }
 
 const NavMenuLink = React.forwardRef<HTMLAnchorElement, NavMenuLinkProps>(
-  ({ className, active, children, ...props }, ref) => {
+  ({ className, active, children, onClick, href, ...props }, ref) => {
     const { setActiveItem } = useNavMenuContext()
+
+    const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+      setActiveItem(null)
+      onClick?.(e)
+    }
 
     return (
       <a
         ref={ref}
+        href={href}
         data-scope="nav-menu"
         data-part="link"
         data-active={active ? '' : undefined}
@@ -290,7 +296,7 @@ const NavMenuLink = React.forwardRef<HTMLAnchorElement, NavMenuLinkProps>(
           active && 'text-foreground bg-accent/50',
           className
         )}
-        onClick={() => setActiveItem(null)}
+        onClick={handleClick}
         {...props}
       >
         {children}
@@ -314,9 +320,7 @@ const NavMenuSub = React.forwardRef<HTMLDivElement, NavMenuSubProps>(
         className={cn('py-2', className)}
         {...props}
       >
-        {title && (
-          <h4 className="px-4 py-1 text-sm font-semibold text-foreground">{title}</h4>
-        )}
+        {title && <h4 className="px-4 py-1 text-sm font-semibold text-foreground">{title}</h4>}
         <div className="mt-1">{children}</div>
       </div>
     )
@@ -333,7 +337,6 @@ const NavMenuSeparator = React.forwardRef<HTMLDivElement, NavMenuSeparatorProps>
         ref={ref}
         data-scope="nav-menu"
         data-part="separator"
-        role="separator"
         className={cn('my-1 h-px bg-border', className)}
         {...props}
       />

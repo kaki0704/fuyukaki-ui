@@ -53,9 +53,15 @@ export const OutlineVariant: Story = {
   render: () => (
     <Tabs defaultValue="overview" className="w-[400px]">
       <TabsList variant="outline">
-        <TabsTrigger value="overview" variant="outline">Overview</TabsTrigger>
-        <TabsTrigger value="analytics" variant="outline">Analytics</TabsTrigger>
-        <TabsTrigger value="reports" variant="outline">Reports</TabsTrigger>
+        <TabsTrigger value="overview" variant="outline">
+          Overview
+        </TabsTrigger>
+        <TabsTrigger value="analytics" variant="outline">
+          Analytics
+        </TabsTrigger>
+        <TabsTrigger value="reports" variant="outline">
+          Reports
+        </TabsTrigger>
       </TabsList>
       <TabsContent value="overview">
         <div className="p-4">
@@ -68,17 +74,13 @@ export const OutlineVariant: Story = {
       <TabsContent value="analytics">
         <div className="p-4">
           <h3 className="text-lg font-semibold">Analytics</h3>
-          <p className="text-sm text-muted-foreground mt-2">
-            View detailed analytics and metrics.
-          </p>
+          <p className="text-sm text-muted-foreground mt-2">View detailed analytics and metrics.</p>
         </div>
       </TabsContent>
       <TabsContent value="reports">
         <div className="p-4">
           <h3 className="text-lg font-semibold">Reports</h3>
-          <p className="text-sm text-muted-foreground mt-2">
-            Generate and download reports.
-          </p>
+          <p className="text-sm text-muted-foreground mt-2">Generate and download reports.</p>
         </div>
       </TabsContent>
     </Tabs>
@@ -89,29 +91,29 @@ export const PillsVariant: Story = {
   render: () => (
     <Tabs defaultValue="all" className="w-[400px]">
       <TabsList variant="pills">
-        <TabsTrigger value="all" variant="pills">All</TabsTrigger>
-        <TabsTrigger value="active" variant="pills">Active</TabsTrigger>
-        <TabsTrigger value="archived" variant="pills">Archived</TabsTrigger>
+        <TabsTrigger value="all" variant="pills">
+          All
+        </TabsTrigger>
+        <TabsTrigger value="active" variant="pills">
+          Active
+        </TabsTrigger>
+        <TabsTrigger value="archived" variant="pills">
+          Archived
+        </TabsTrigger>
       </TabsList>
       <TabsContent value="all">
         <div className="p-4 border border-border rounded-lg mt-4">
-          <p className="text-sm text-muted-foreground">
-            Showing all items in your collection.
-          </p>
+          <p className="text-sm text-muted-foreground">Showing all items in your collection.</p>
         </div>
       </TabsContent>
       <TabsContent value="active">
         <div className="p-4 border border-border rounded-lg mt-4">
-          <p className="text-sm text-muted-foreground">
-            Showing only active items.
-          </p>
+          <p className="text-sm text-muted-foreground">Showing only active items.</p>
         </div>
       </TabsContent>
       <TabsContent value="archived">
         <div className="p-4 border border-border rounded-lg mt-4">
-          <p className="text-sm text-muted-foreground">
-            Showing archived items.
-          </p>
+          <p className="text-sm text-muted-foreground">Showing archived items.</p>
         </div>
       </TabsContent>
     </Tabs>
@@ -123,7 +125,9 @@ export const Disabled: Story = {
     <Tabs defaultValue="tab1" className="w-[400px]">
       <TabsList>
         <TabsTrigger value="tab1">Tab 1</TabsTrigger>
-        <TabsTrigger value="tab2" disabled>Tab 2 (Disabled)</TabsTrigger>
+        <TabsTrigger value="tab2" disabled>
+          Tab 2 (Disabled)
+        </TabsTrigger>
         <TabsTrigger value="tab3">Tab 3</TabsTrigger>
       </TabsList>
       <TabsContent value="tab1">
@@ -150,7 +154,18 @@ export const WithIcons: Story = {
     <Tabs defaultValue="music" className="w-[400px]">
       <TabsList>
         <TabsTrigger value="music" className="flex items-center gap-2">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
+          >
             <path d="M9 18V5l12-2v13" />
             <circle cx="6" cy="18" r="3" />
             <circle cx="18" cy="16" r="3" />
@@ -158,7 +173,18 @@ export const WithIcons: Story = {
           Music
         </TabsTrigger>
         <TabsTrigger value="photos" className="flex items-center gap-2">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
+          >
             <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
             <circle cx="8.5" cy="8.5" r="1.5" />
             <polyline points="21,15 16,10 5,21" />
@@ -166,7 +192,18 @@ export const WithIcons: Story = {
           Photos
         </TabsTrigger>
         <TabsTrigger value="videos" className="flex items-center gap-2">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
+          >
             <polygon points="23,7 16,12 23,17 23,7" />
             <rect x="1" y="5" width="15" height="14" rx="2" ry="2" />
           </svg>

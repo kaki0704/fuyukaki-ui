@@ -103,9 +103,9 @@ export const AvatarImage = React.forwardRef<HTMLImageElement, AvatarImageProps>(
         ref={ref}
         data-part="image"
         src={src}
-        alt={alt || ''}
         className={cn(avatarImageVariants(), className)}
         {...props}
+        alt={alt || 'Avatar'}
       />
     )
   }

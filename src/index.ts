@@ -164,7 +164,12 @@ export type {
 } from './components/table'
 
 export { Tabs, TabsList, TabsTrigger, TabsContent } from './components/tabs'
-export type { TabsProps, TabsListProps, TabsTriggerProps, TabsContentProps } from './components/tabs'
+export type {
+  TabsProps,
+  TabsListProps,
+  TabsTriggerProps,
+  TabsContentProps,
+} from './components/tabs'
 
 export { Slider } from './components/slider'
 export type { SliderProps } from './components/slider'
@@ -209,6 +214,38 @@ export type {
   BreadcrumbSeparatorProps,
   BreadcrumbEllipsisProps,
 } from './components/breadcrumb'
+
+export {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
+  CarouselDots,
+  useCarouselContext,
+} from './components/carousel'
+export type {
+  CarouselProps,
+  CarouselContentProps,
+  CarouselItemProps,
+  CarouselPreviousProps,
+  CarouselNextProps,
+  CarouselDotsProps,
+} from './components/carousel'
+
+export {
+  Stepper,
+  Step,
+  StepTitle,
+  StepDescription,
+  useStepperContext,
+} from './components/stepper'
+export type {
+  StepperProps,
+  StepProps,
+  StepTitleProps,
+  StepDescriptionProps,
+} from './components/stepper'
 
 // Hooks
 export {

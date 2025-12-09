@@ -74,8 +74,8 @@ export const DifferentSpeeds: Story = {
 export const InParagraph: Story = {
   render: () => (
     <p className="max-w-lg text-lg">
-      Build your next project with <HidamariText>cutting-edge</HidamariText>{' '}
-      technology and <HidamariText>modern design</HidamariText> principles.
+      Build your next project with <HidamariText>cutting-edge</HidamariText> technology and{' '}
+      <HidamariText>modern design</HidamariText> principles.
     </p>
   ),
 }
@@ -84,9 +84,7 @@ export const OriginalMagicUI: Story = {
   render: () => (
     <h1 className="text-4xl font-bold tracking-tighter md:text-5xl lg:text-7xl">
       Ship{' '}
-      <HidamariText colors={['#FF0080', '#7928CA', '#0070F3', '#38bdf8']}>
-        beautiful
-      </HidamariText>{' '}
+      <HidamariText colors={['#FF0080', '#7928CA', '#0070F3', '#38bdf8']}>beautiful</HidamariText>{' '}
       products
     </h1>
   ),

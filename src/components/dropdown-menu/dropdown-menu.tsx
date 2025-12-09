@@ -256,8 +256,6 @@ export const DropdownMenuSeparator = React.forwardRef<HTMLDivElement, DropdownMe
       ref={ref}
       data-scope="dropdown-menu"
       data-part="separator"
-      role="separator"
-      aria-orientation="horizontal"
       className={cn(dropdownMenuSeparatorVariants(), className)}
       {...props}
     />

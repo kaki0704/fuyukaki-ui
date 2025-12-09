@@ -23,8 +23,7 @@ export default defineConfig({
         plugin: resolve(__dirname, 'src/plugin.ts'),
       },
       formats: ['es', 'cjs'],
-      fileName: (format, entryName) =>
-        format === 'es' ? `${entryName}.js` : `${entryName}.cjs`,
+      fileName: (format, entryName) => (format === 'es' ? `${entryName}.js` : `${entryName}.cjs`),
     },
     cssCodeSplit: false,
     rollupOptions: {

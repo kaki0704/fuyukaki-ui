@@ -204,10 +204,7 @@ const Slider = React.forwardRef<HTMLDivElement, SliderProps>(
           <span
             data-scope="slider"
             data-part="value"
-            className={cn(
-              'text-sm font-medium text-foreground',
-              isHorizontal ? 'mr-3' : 'mb-3'
-            )}
+            className={cn('text-sm font-medium text-foreground', isHorizontal ? 'mr-3' : 'mb-3')}
           >
             {value}
           </span>
@@ -229,15 +226,9 @@ const Slider = React.forwardRef<HTMLDivElement, SliderProps>(
             data-part="range"
             className={cn(
               'absolute rounded-full bg-primary',
-              isHorizontal
-                ? 'h-full left-0'
-                : 'w-full bottom-0'
+              isHorizontal ? 'h-full left-0' : 'w-full bottom-0'
             )}
-            style={
-              isHorizontal
-                ? { width: `${percentage}%` }
-                : { height: `${percentage}%` }
-            }
+            style={isHorizontal ? { width: `${percentage}%` } : { height: `${percentage}%` }}
           />
           <div
             data-scope="slider"

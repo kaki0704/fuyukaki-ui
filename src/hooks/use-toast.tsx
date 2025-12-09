@@ -54,7 +54,7 @@ export function ToastProvider({ children }: { children: React.ReactNode }) {
       ...options,
     }
 
-    setToasts(prev => [...prev, newToast])
+    setToasts((prev) => [...prev, newToast])
 
     if (newToast.duration && newToast.duration > 0) {
       setTimeout(() => {
@@ -66,17 +66,15 @@ export function ToastProvider({ children }: { children: React.ReactNode }) {
   }, [])
 
   const dismiss = React.useCallback((id: string) => {
-    setToasts(prev =>
-      prev.map(toast => (toast.id === id ? { ...toast, open: false } : toast))
-    )
+    setToasts((prev) => prev.map((toast) => (toast.id === id ? { ...toast, open: false } : toast)))
 
     setTimeout(() => {
-      setToasts(prev => prev.filter(toast => toast.id !== id))
+      setToasts((prev) => prev.filter((toast) => toast.id !== id))
     }, 300)
   }, [])
 
   const dismissAll = React.useCallback(() => {
-    setToasts(prev => prev.map(toast => ({ ...toast, open: false })))
+    setToasts((prev) => prev.map((toast) => ({ ...toast, open: false })))
     setTimeout(() => {
       setToasts([])
     }, 300)
