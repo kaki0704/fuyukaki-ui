@@ -59,6 +59,9 @@ export type { SpinnerProps } from './components/spinner'
 export { HidamariText } from './components/hidamari-text'
 export type { HidamariTextProps } from './components/hidamari-text'
 
+export { Ripple } from './components/ripple'
+export type { RippleProps } from './components/ripple'
+
 // New Components
 export {
   Avatar,

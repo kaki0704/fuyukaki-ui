@@ -66,6 +66,20 @@
   animation: hidamari 8s ease-in-out infinite alternate;
 }
 
+@keyframes ripple {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50%,
+  100% {
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+}
+
+.animate-ripple {
+  animation: ripple 2s ease-out infinite;
+}
+
 .dark {
   --color-background: var(--color-dark-background);
   --color-foreground: var(--color-dark-foreground);
